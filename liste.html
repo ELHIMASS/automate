@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liste de course</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">🛒 ListeCourses</div>
+    <div class="navbar-links">
+      <a href="/index.html">Produits disponibles</a>
+      <a href="/liste.html" class="active">Liste de course</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h2>Ma liste de course</h2>
+      <button id="vider-liste" class="btn btn-danger">Vider la liste</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th>PU (€)</th>
+          <th>Quantité</th>
+          <th>Sous-total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="liste-course-body"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"><strong>Total général</strong></td>
+          <td id="total-general"><strong>0.00 €</strong></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <script type="module" src="/src/liste.js"></script>
+</body>
+</html>

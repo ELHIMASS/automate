@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produits disponibles</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">🛒 ListeCourses</div>
+    <div class="navbar-links">
+      <a href="/index.html" class="active">Produits disponibles</a>
+      <a href="/liste.html">Liste de course</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Produits disponibles <span id="compteur-produits" class="badge">0</span></h1>
+    </div>
+
+    <div class="filters">
+      <input type="text" id="recherche" placeholder="Rechercher un produit..." />
+      <select id="tri">
+        <option value="">Trier par...</option>
+        <option value="nom">Nom (A-Z)</option>
+        <option value="prix">Prix (croissant)</option>
+      </select>
+      <button id="reset-filtres" class="btn btn-secondary">Réinitialiser</button>
+    </div>
+
+    <ul id="liste-produits"></ul>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
